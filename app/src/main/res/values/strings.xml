@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Gaussian Probability Calculator</string>
+    <string name="night_mode_action">Night mode</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Point Probability</string>
+    <string name="second_fragment_label">Cumulative Probability</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="point_first">Point</string>
+    <string name="result_text_first">0.0</string>
+    <string name="median_value_first">Median value</string>
+    <string name="std_first">Standard deviation</string>
+    <string name="above_second">Above</string>
+    <string name="below_second">Below</string>
+    <string name="between_second">Between</string>
+    <string name="outside_second">Outside</string>
+    <string name="calculate_second">CALCULATE</string>
+    <string name="result_second">0.0</string>
+    <string name="std_second">Standard deviation</string>
+    <string name="point_b_second">Point B</string>
+    <string name="point_a_second">Point A</string>
+    <string name="mean_second">Mean</string>
+    <string name="graph_first">graph_first</string>
+    <string name="graph_second">graph_second</string>
+</resources>

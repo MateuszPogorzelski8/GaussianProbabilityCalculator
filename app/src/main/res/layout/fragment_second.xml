@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SCREEN"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaussapp.myapplication.SecondFragment">
+
+
+
+    <ImageView
+        android:id="@+id/imagesecond"
+        android:contentDescription="@string/graph_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toTopOf="@+id/result_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/drugi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#A50756"
+        android:text="@string/previous"
+        app:icon="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paddingStart="0dp"
+        android:paddingBottom="0dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+        <RadioButton
+            android:id="@+id/radioButton_above"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#A50707"
+            android:checked="false"
+            android:text="@string/above_second"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#A50707"
+            android:text="@string/below_second"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_between"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#A50707"
+            android:checked="true"
+            android:text="@string/between_second"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_outside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#A50707"
+            android:text="@string/outside_second"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/mean_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/result_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:maxLength="7"
+        android:text="@string/result_second"
+        android:textColor="#A55607"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calculate_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#A50756"
+        android:text="@string/calculate_second"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <EditText
+        android:id="@+id/std_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#A50707"
+        android:drawableStart="@drawable/ic_action_name"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/std_second"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:maxLength="12"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/a"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#A50707"
+        android:drawableStart="@drawable/point_icon"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/point_b_second"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberSigned"
+        android:maxLength="12"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculate_second"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#A50707"
+        android:drawableStart="@drawable/point_icon"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/point_a_second"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberSigned"
+        android:maxLength="12"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/b"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/mean_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#A50707"
+        android:drawableStart="@drawable/m_icon"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/mean_second"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:maxLength="12"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/std_second"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/deletebutton_second"
+        android:layout_width="43dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:foreground="@mipmap/trashcan_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
